@@ -23,4 +23,4 @@ jobs:
         env:      
           BADHASH: ${{ github.sha }}
 
-        run: python .github\workflows\myscript.py
+        run: python myscript.py
