@@ -19,5 +19,8 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
 
-      - name: Run tests
-        run: python manage.py test
+      - name: Run git bisect
+        env:      
+          BADHASH: ${{ github.sha }}
+
+        run: python myscript.py
